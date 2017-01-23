@@ -1,0 +1,163 @@
+<div id="page_innerContent" style="background:#f2f2f2; overflow: hidden;">
+	<div class="weui_cells_title">基础信息</div>
+	<div class="weui_cells weui_cells_form">
+		<div class="weui_cell">
+			<div class="weui_cell_hd"><label class="weui_label">标题</label></div>
+			<div class="weui_cell_bd weui_cell_primary">
+				<input class="weui_input" type="text" placeholder="请输入文本text">
+			</div>
+		</div>
+		<div class="weui_cell weui_vcode">
+			<div class="weui_cell_hd"><label class="weui_label">验证码</label></div>
+			<div class="weui_cell_bd weui_cell_primary">
+				<input class="weui_input" type="text" placeholder="请输入验证码">
+			</div>
+			<div class="weui_cell_ft">
+				<img src="../images/vcode/vcode.jpg">
+			</div>
+		</div>
+		
+		<div class="weui_cell">
+			<div class="weui_cell_hd"><label for="" class="weui_label">date</label></div>
+			<div class="weui_cell_bd weui_cell_primary">
+				<input class="weui_input" type="date" value="" placeholder="请选择日期">
+			</div>
+		</div>
+		<div class="weui_cell weui_cell_select">
+		    <div class="weui_cell_bd weui_cell_primary">
+		      <select class="weui_select" name="select1">
+		        <option selected="" value="0">选择Select</option>
+		        <option value="1">微信号</option>
+		        <option value="2">QQ号</option>
+		        <option value="3">Email</option>
+		      </select>
+		    </div>
+		</div>
+		
+		<div class="weui_cell weui_cell_tops">
+			<div class="weui_cell_hd"><label for="home-city" class="weui_label">文本域</label></div>
+			<div class="weui_cell_bd weui_cell_primary">
+				<textarea class="weui_textarea" placeholder="请输入文本"  onpropertychange="this.style.height=this.scrollHeight + 'px'" oninput="this.style.height=this.scrollHeight + 'px'"></textarea>
+			</div>
+		</div>
+	</div>
+	<div class="weui_cells_title">是否选择</div>
+	<div class="weui_cells weui_cells_form">
+		<div class="weui_cell weui_cell_switch">
+			<div class="weui_cell_hd weui_cell_primary">checkbox</div>
+			<div class="weui_cell_ft">
+				<input class="weui_switch" type="checkbox" value="">
+			</div>
+		</div>
+	</div>
+	<p class="page-note">获取当前checkbox选中状态：$(".weui_switch").is(':checked')返回 true/false</p>
+	<div class="weui_cells_title">单项选择-同行</div>
+	<div class="weui_cells weui_cells_form">
+		<div class="weui_cell">
+			<div class="weui_cell_hd"><label for="" class="weui_label">性别</label></div>
+			<div class="weui_cell_bd weui_cell_primary">
+				<p class="customRadio">
+					<input type="radio" name="sex" value="男" id="radio-man" checked="checked">
+					<a href="javascript:void(0);">
+						<span class="ficon icon-ok"></span>
+						<span class="icons icons-circal"></span> 男
+					</a>
+					<input type="radio" name="sex" value="女" id="radio-woman">
+					<a href="javascript:void(0);">
+						<span class="ficon icon-ok"></span>
+						<span class="icons icons-circal"></span> 女
+					</a>
+					<input type="radio" name="sex" value="未知" id="radio-unknow">
+					<a href="javascript:void(0);">
+						<span class="ficon icon-ok"></span>
+						<span class="icons icons-circal"></span> 未知
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="weui_cells_title">多项选择-同行</div>
+	<div class="weui_cells weui_cells_form">
+		<div class="weui_cell">
+			<div class="weui_cell_hd"><label for="" class="weui_label">checkbox</label></div>
+			<div class="weui_cell_bd weui_cell_primary">
+				<p class="customRadio">
+					<input type="checkbox" name="duty" value="拍照" class="inp_check" checked="checked">
+					<a href="javascript:void(0);" class="link_check">
+						<span class="ficon icon-check-ok"></span>
+						<span class="icons icons-check-circal"></span> 拍照
+					</a>
+				</p>
+				<p class="customRadio">
+					<input type="checkbox" name="duty" value="录音" class="inp_check">
+					<a href="javascript:void(0);" class="link_check">
+						<span class="ficon icon-check-ok"></span>
+						<span class="icons icons-check-circal"></span> 录音
+					</a>
+				</p>
+				<p class="customRadio">
+					<input type="checkbox" name="duty" value="静音" class="inp_check">
+					<a href="javascript:void(0);" class="link_check">
+						<span class="ficon icon-check-ok"></span>
+						<span class="icons icons-check-circal"></span> 静音
+					</a>
+				</p>
+				<p class="customRadio">
+					<input type="checkbox" name="duty" value="切换系统" class="inp_check">
+					<a href="javascript:void(0);" class="link_check">
+						<span class="ficon icon-check-ok"></span>
+						<span class="icons icons-check-circal"></span> 切换系统
+					</a>
+				</p>
+			</div>
+		</div>
+		<div class="weui_cell">
+			<div class="weui_cell_hd"><label for="" class="weui_label">radio<br>多行</label></div>
+			<div class="weui_cell_bd weui_cell_primary">
+				<p class="multiRadio">
+					<input type="radio" name="duty" value="拍照" class="inp_check" checked="checked">
+					<a href="javascript:void(0);" class="link_check">
+						<span class="ficon icon-ok"></span>
+						<span class="icons icons-circal"></span> 
+						<span class="text">QQ表情栏目提供最前沿最好看的QQ表情大全</span>
+					</a>
+				</p>
+				<p class="multiRadio">
+					<input type="radio" name="duty" value="拍照" class="inp_check">
+					<a href="javascript:void(0);" class="link_check">
+						<span class="ficon icon-ok"></span>
+						<span class="icons icons-circal"></span> 
+						<span class="text">QQ表情栏目提供最前沿最好看的QQ表情大全</span>
+					</a>
+				</p>
+			</div>
+		</div>
+		<div class="weui_cell">
+			<div class="weui_cell_hd"><label for="" class="weui_label">checkbox<br>多行</label></div>
+			<div class="weui_cell_bd weui_cell_primary">
+				<p class="multiRadio">
+					<input type="checkbox" name="duty" value="拍照" class="inp_check" checked="checked">
+					<a href="javascript:void(0);" class="link_check">
+						<span class="ficon icon-check-ok"></span>
+						<span class="icons icons-check-circal"></span> 
+						<span class="text">QQ表情栏目提供最前沿最好看的QQ表情大全</span>
+					</a>
+				</p>
+				<p class="multiRadio">
+					<input type="checkbox" name="duty" value="拍照" class="inp_check">
+					<a href="javascript:void(0);" class="link_check">
+						<span class="ficon icon-check-ok"></span>
+						<span class="icons icons-check-circal"></span> 
+						<span class="text">QQ表情栏目提供最前沿最好看的QQ表情大全</span>
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<p class="page-note">
+		获取多选函数commonFun.getInputOption(name)<br>
+		返回值："拍照,录音,静音"
+	</p>
+	
+</div>
+

@@ -1,0 +1,168 @@
+<header class="page-header">
+	<h1 class="page-title">弹出框</h1>
+</header>
+<p class="page-note">此处为弹出框，请查看script/views/alerts.js 对应操作</p>
+<div class="row-tab">Toptip</div>
+<p class="page-note"> $.toptip('操作成功', 'success'); error warning</p>
+<div class="content-padded">	
+ 	<a href="javascript:;" id='show-success' class="weui_btn weui_btn_mini weui_btn_primary">显示成功</a>
+    <a href="javascript:;" id='show-error' class="weui_btn weui_btn_mini weui_btn_primary">显示失败</a>
+    <a href="javascript:;" id='show-warning' class="weui_btn weui_btn_mini weui_btn_primary">显示警告</a>
+</div>
+<div class="row-tab">popup</div>
+<div class="content-padded">
+	<a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_primary open-popup" data-target="#full">显示全屏(默认)Popup</a>
+    <a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_primary open-popup" data-target="#half">显示底部的Popup</a>
+    <a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_primary open-popup" data-target="#slide">显示侧边的Popup菜单</a>
+</div>
+<div class="row-tab">显示通知</div>
+<div class="content-padded">
+	<a href="javascript:;" id='show-notification' class="weui_btn weui_btn_mini weui_btn_primary">显示通知</a>
+</div>
+<div class="row-tab">alert confirm tost</div>
+<div class="content-padded">
+	<p class="page-note">$.alert("内容", "title");</p>
+	<a href="javascript:;" id='show-alert' class="weui_btn weui_btn_mini weui_btn_primary">显示 Alert</a>
+	<p class="page-note">
+		$.confirm("内容？", "标题?", function() {<br>
+				$.toast("文件已经删除!");<br>
+		}, function() {<br>
+				//取消操作<br>
+		});<br>
+	</p>
+    <a href="javascript:;" id='show-confirm' class="weui_btn weui_btn_mini weui_btn_primary">显示 Confirm</a>    
+    <a href="javascript:;" id='show-prompt' class="weui_btn weui_btn_mini weui_btn_primary">显示 Prompt</a>
+    <a href="javascript:;" id='show-login' class="weui_btn weui_btn_mini weui_btn_primary">显示登录弹窗</a>
+    <a href="javascript:;" id='show-custom' class="weui_btn weui_btn_mini weui_btn_primary">显示自定义对话框</a>
+</div>
+<div class="row-tab">toast</div>
+
+<div class="content-padded">
+	<p class="page-note">
+		$.toast("操作成功");
+		$.toast("禁止操作", "forbidden");  
+		<br>
+		cancel / forbidden / text
+	</p>
+	<a href="javascript:;" id='show-toast' class="weui_btn weui_btn_mini weui_btn_primary">显示 Toast 成功</a>
+    <a href="javascript:;" id='show-toast-cancel' class="weui_btn weui_btn_mini weui_btn_primary">显示 Toast 取消</a>
+    <a href="javascript:;" id='show-toast-forbidden' class="weui_btn weui_btn_mini weui_btn_primary">显示 Toast 禁止</a>
+    <a href="javascript:;" id='show-toast-text' class="weui_btn weui_btn_mini weui_btn_primary">显示 Toast 纯文本</a>
+    <p class="page-note">
+
+	 $.showLoading("自定义文字");
+	
+	    setTimeout(function() {
+	      $.hideLoading();
+	    }, 3000)
+	
+	</p>
+    <a href="javascript:;" id='show-loading' class="weui_btn weui_btn_mini weui_btn_primary">显示 Loading</a>
+</div>
+
+<!--弹出侧边菜单-->
+<div id="slide" class="weui-popup-container popup-slide">
+	<div class="weui-popup-overlay"></div>
+	<div class="weui-popup-modal">
+		<div class="weui-poup-body">
+			
+		</div>
+		<div class="weui-popup-foot">
+			<a href="javascript:void(0);" class="weui_btn weui_btn_default">重置</a>
+			<a href="javascript:void(0);" class="weui_btn weui_btn_warn">确定</a>
+		</div>
+	</div>
+</div>
+
+<!-- popup 弹出层内容 -->
+ <div id="full" class='weui-popup-container'>
+	<div class="weui-popup-overlay"></div>
+	<div class="weui-popup-modal">
+		<header class='demos-header'>
+			<h2 class="demos-second-title">关于 jQuery WeUI</h2>
+			<p class="demos-sub-title">By 言川 @2016/03/30</p>
+		</header>
+
+		<article class="weui_article">
+			<h1>大标题</h1>
+			<section>
+				<h2 class="title">章标题</h2>
+				<section>
+					<h3>1.1 节标题</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+				</section>
+				<section>
+					<h3>1.2 节标题</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</section>
+			</section>
+			<section>
+				<a href="javascript:;" class="weui_btn weui_btn_plain_primary close-popup">关闭</a>
+			</section>
+		</article>
+	</div>
+</div>
+
+<div id="half" class='weui-popup-container popup-bottom'>
+	<div class="weui-popup-overlay"></div>
+	<div class="weui-popup-modal">
+		<div class="toolbar">
+			<div class="toolbar-inner">
+				<a href="javascript:;" class="picker-button close-popup">关闭</a>
+				<h1 class="title">标题</h1>
+			</div>
+		</div>
+		<div class="modal-content">
+			<div class="weui_grids">
+				<a href="javascript:;" class="weui_grid js_grid" data-id="dialog">
+					<div class="weui_grid_icon">
+						<img src="../images/icon/icon_nav_dialog.png" alt="">
+					</div>
+					<p class="weui_grid_label">
+						发布
+					</p>
+				</a>
+				<a href="javascript:;" class="weui_grid js_grid" data-id="progress">
+					<div class="weui_grid_icon">
+						<img src="../images/icon/icon_nav_progress.png" alt="">
+					</div>
+					<p class="weui_grid_label">
+						编辑
+					</p>
+				</a>
+				<a href="javascript:;" class="weui_grid js_grid" data-id="msg">
+					<div class="weui_grid_icon">
+						<img src="../images/icon/icon_nav_msg.png" alt="">
+					</div>
+					<p class="weui_grid_label">
+						保存
+					</p>
+				</a>
+				<a href="javascript:;" class="weui_grid js_grid" data-id="dialog">
+					<div class="weui_grid_icon">
+						<img src="../images/icon/icon_nav_dialog.png" alt="">
+					</div>
+					<p class="weui_grid_label">
+						发布
+					</p>
+				</a>
+				<a href="javascript:;" class="weui_grid js_grid" data-id="progress">
+					<div class="weui_grid_icon">
+						<img src="../images/icon/icon_nav_progress.png" alt="">
+					</div>
+					<p class="weui_grid_label">
+						编辑
+					</p>
+				</a>
+				<a href="javascript:;" class="weui_grid js_grid" data-id="msg">
+					<div class="weui_grid_icon">
+						<img src="../images/icon/icon_nav_msg.png" alt="">
+					</div>
+					<p class="weui_grid_label">
+						保存
+					</p>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

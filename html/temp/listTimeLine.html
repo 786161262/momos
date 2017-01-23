@@ -1,0 +1,47 @@
+<style>
+.timelineBox{ width:86%; margin:0 auto; border-left:2px #dfdfdf solid; padding-left:10px;  padding-top:30px; margin-top:-15px;}
+.timelineIteam{ position: relative; padding-left:12px; margin-bottom:44px ;}
+.timelineIteam .circal{ width:10px; height: 10px; background:#dfdfdf; border-radius: 50%; -webkit-border-radius:50%; position:absolute; left: -16px; top: 8px;}
+.timelineIteam .line{width:10px; height: 10px;border-bottom: 1px #dfdfdf solid; position:absolute; left: -4px; top: 2px;}
+.timelineIteam .infos{ background:#f9f9f9; padding:10px; border-radius: 10px; -webkit-border-radius: 10px; color: #a2a2a2; overflow: hidden;}
+.timelineIteam .date{ color: #a2a2a2;}
+.timelineIteam .text{ height:30px; line-height: 30px;}
+.timelineIteam .subline{ height:20px; line-height: 20px;}
+.timelineIteam .subline i{ width:16px; height: 16px; margin-right:6px; display: inline-block; vertical-align: top;}
+.timelineIteamToday .date{color:#FA8279;}
+.timelineIteamToday .circal{background:#FA8279;}
+.timelineIteamToday .line{ border-bottom: 1px #FA8279 solid;}
+.timelineIteamToday .infos{ color:#fff; background:#FA8279;}
+.timelineIteamToday .ic_location{ background-image: url(../images/icon_locationfff.png);}
+.timelineIteamToday .ic_clock{ background-image: url(../images/icon_clockfff.png);}
+</style>
+
+<div class="timelineBox">
+	<div class="timelineIteam">
+		<i class="circal"></i>
+		<i class="line"></i>
+		<p class="date">2016.01.05</p>
+		<div class="infos">
+			<p class="text">会议标题会议标题</p>
+			<p class="subline">
+				<span class="fl"><i><img class="img_response" src="../images/temp/icon_location.png"></i>21112会议室</span>
+				<span class="fr"><i><img class="img_response" src="../images/temp/icon_clock.png"></i>13:00-15:00</span>
+			</p>
+		</div>
+	</div>
+	<div class="timelineIteam timelineIteamToday">
+		<i class="circal"></i>
+		<i class="line"></i>
+		<p class="date">2016.01.05&nbsp;&nbsp;今日</p>
+		<div class="infos">
+			<p class="text">会议标题会议标题</p>
+			<p class="subline">
+				<span class="fl"><i><img class="img_response" src="../images/temp/icon_locationfff.png"></i>21112会议室</span>
+				<span class="fr"><i><img class="img_response" src="../images/temp/icon_clockfff.png"></i>13:00-15:00</span>
+			</p>
+		</div>
+	</div>
+</div>
+
+
+<p class="page-note">包含独立css</p>

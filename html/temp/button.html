@@ -1,0 +1,116 @@
+<style>
+.weui-row {
+    margin-bottom: 10px;
+  }
+</style>
+<header class="page-header">
+	<h1 class="page-title">按钮</h1>
+</header>
+<div class="content-padded">
+	<p class="page-note">
+		.btn-group .weui_btn 可改变 padding<br>
+		结构必须为btn-group 的结构可更改颜色等
+	</p>
+	<div class="btn-group">
+	  	<button type="button" class="weui_btn weui_btn_mini weui_btn_default" data-toggle="dropdown">
+	   		<span id="J_searchType" data-status="0">未处理</span> <span class="ui-icon-unfold"></span>
+	  	</button>
+	  	<ul class="dropdown-menu" role="menu">
+		    <li><a href="javascript:void(0);" class="dropMenuIteam" data-status="0">未处理</a></li>
+		    <li class="divider"></li>
+		    <li><a href="javascript:void(0);" class="dropMenuIteam" data-status="1">已处理</a></li>
+	  	</ul>	
+	</div>
+	
+	<div class="btn-group">
+		<button type="button" class="weui_btn weui_btn_mini weui_btn_primary">按钮</button>
+		<button type="button" class="weui_btn weui_btn_mini weui_btn_primary dropdown-toggle" data-toggle="dropdown">
+		    <span class="ui-icon-unfold"></span>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+		    <li><a href="#">Action</a></li>
+		    <li><a href="#">Another action</a></li>
+		    <li><a href="#">Something else here</a></li>
+		    <li class="divider"></li>
+		    <li><a href="#">Separated link</a></li>
+		</ul>
+	</div>
+	
+</div>
+
+<div class="content-padded">
+	<button class="weui_btn weui_btn_primary">按钮button</button>
+	<button class="weui_btn weui_btn_disabled weui_btn_primary">提交中</button>
+	<a href="javascript:;" class="weui_btn weui_btn_warn">确认 a</a>
+	<a href="javascript:;" class="weui_btn weui_btn_disabled weui_btn_warn">提交中</a>
+</div>
+<p class="page-note">
+	样式修改：<br>
+	圆角修改 2倍关系<br> .weui_btn{border-radius:20px;}<br> .weui_btn:after{border-radius:40px;}
+</p>
+<div class="row-tab">此处为栅格按钮</div>
+<div class="content-padded">
+	<div class="weui-row">
+		<div class="weui-col-50">
+			<a href="javascript:;" class="weui_btn weui_btn_default">按钮</a>
+		</div>
+		<div class="weui-col-50">
+			<a href="javascript:;" class="weui_btn weui_btn_disabled weui_btn_default">提交中</a>
+		</div>
+	</div>
+	<div class="weui-row">
+		<div class="weui-col-50">
+			<a href="javascript:;" class="weui_btn weui_btn_plain_default">按钮</a>
+		</div>
+		<div class="weui-col-50">
+			<a href="javascript:;" class="weui_btn weui_btn_plain_primary">按钮</a>
+		</div>
+	</div>
+	<div class="weui-row">
+		<div class="weui-col-33">
+			<a href="javascript:;" class="weui_btn weui_btn_blue">按钮</a>
+		</div>
+		<div class="weui-col-33">
+			<a href="javascript:;" class="weui_btn weui_btn_yellow">按钮</a>
+		</div>
+		<div class="weui-col-33">
+			<a href="javascript:;" class="weui_btn weui_btn_white">按钮</a>
+		</div>
+	</div>
+</div>
+<div class="row-tab">小按钮在列表中使用</div>
+<div class="content-padded">
+	<div class="weui-row">
+		<div class="weui-col-50  text_center">
+			<a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_primary">按钮mini</a>
+			<a href="javascript:;" class="weui_btn weui_btn_xs weui_btn_primary">按钮xs</a>
+		</div>
+		<div class="weui-col-50 text_center">
+			<a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_default">按钮</a>
+		</div>
+	</div>
+</div>
+<div class="row-tab">小按钮带进度条的按钮</div>
+<div class="content-padded">
+    <button class="weui_btn weui_btn_mini weui_btn_default ui-btn-progress">确定</button>
+    <button class="weui_btn weui_btn_mini weui_btn_default ui-btn-progress">
+        <span>50%</span>
+        <span class="ui-btn-inner" style="width:50%"><span>50%</span></span>
+    </button>
+    <button class="weui_btn weui_btn_mini weui_btn_default ui-btn-progress" disabled>取消</button>
+</div>
+
+<div class="content-padded">
+    <button class="weui_btn weui_btn_default ui-btn-progress">确定</button>
+    <button class="weui_btn weui_btn_default ui-btn-progress">
+        <span>50%</span>
+        <span class="ui-btn-inner" style="width:50%"><span>50%</span></span>
+    </button>
+    <button class="weui_btn weui_btn_default ui-btn-progress" disabled>取消</button>
+</div>
+
+
+
+
+
+

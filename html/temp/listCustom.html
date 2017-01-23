@@ -1,0 +1,124 @@
+<header class="page-header">
+	<h1 class="page-title">自定义列表</h1>
+</header>
+<link href="../script/plugins/lightbox/lightbox.min.css" rel="stylesheet" type="text/css">
+<style>
+.shareBox{border-radius: 6px; -webkit-border-radius: 6px;}
+.shareBox .weui_media_title .subtit{ font-style: normal; color:#FE913E; font-size:.625rem; }
+.shareBox .share_media_title{ font-size: .75rem;}
+.shareBox .share_media_title i{ margin-left:10px; margin-top:2px;}
+.shareBox .share_media_desc{ display: block; font-size:13px; margin-bottom:14px; color:#666;}
+.shareBox .share-ul li{ width:24%;}
+.shareBox .share-ul li img{ width:100%; border-radius: 4px; -webkit-border-radius: 4px;}
+.shareBox .weui_media_box.weui_media_text .share_media_btm{height:18px; line-height: 18px; text-align: center; background: #ebebeb;}
+.shareBox .weui_media_box.weui_media_text .share_media_btm .weui_media_info_meta{ display: inline-block; width:33%; padding:4px 0 0 0; color:#666;}
+.shareBox .weui_media_box.weui_media_text .share_media_btm .weui_media_info_meta [class^=ui-icon-] {font-size:16px; vertical-align: top; line-height: 16px; color:#999;}
+
+</style>
+
+<div class="content-padded" style="background-color:#f2f2f2;">
+
+<div class="row-tab-lg">
+	<span class="fl title"><i class="ui-icon-voice"></i> 最新活动</span>	    	
+	<span class="fr subTit"><a href="sqBoard.html">更多 <i class="ui-icon-arrow"></i></a></span>
+</div>
+<div class="weui_panel weui_panel_access shareBox clear">
+	<div class="weui_panel_bd">
+		<a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+	        <div class="weui_media_hd">
+	          <img class="weui_media_appmsg_thumb" src="../images/icon_male.png" alt="">
+	        </div>
+	        <div class="weui_media_bd">
+	          <h4 class="weui_media_title">主要标题 <i class="subtit">次标题</i></h4>
+	          <p class="weui_media_desc">2016-05-21 14:00</p>
+	        </div>
+	      </a>
+	</div>
+	<div class="weui_media_box weui_media_text">
+        <h4 class="share_media_title">社区标题</h4>
+        <a href="###" class="share_media_desc">内容简介内容简介内容简介内容简介内容简介.<span class="ui-txt-highlight">查看原文</span></a>
+        <ul class="ui-justify ui-whitespace share-ul">
+	        <li><a href="../images/temp/sq1.jpg"  rel="lightbox[roadtrip]"><img src="../images/temp/sq1.jpg"></a></li>
+	        <li><a href="../images/temp/sq2.jpg"  rel="lightbox[roadtrip]"><img src="../images/temp/sq2.jpg"></a></li>
+	        <li><a href="../images/temp/sq3.jpg"  rel="lightbox[roadtrip]"><img src="../images/temp/sq3.jpg"></a></li>
+	        <li><a href="../images/temp/sq4.jpg"  rel="lightbox[roadtrip]"><img src="../images/temp/sq4.jpg"></a></li>
+	    </ul>
+        <ul class="weui_media_info share_media_btm">
+          <li class="weui_media_info_meta"><i class="ui-icon-liked"></i>5</li>
+          <li class="weui_media_info_meta weui_media_info_meta_extra"><i class="ui-icon-commented"></i>0</li>
+          <li class="weui_media_info_meta weui_media_info_meta_extra"><i class="ui-icon-search"></i>200</li>
+        </ul>
+    </div>
+</div>
+<div class="page-note">
+	点击查看大图：<br>
+	页面载入js/css：lightbox<br>
+	结构href放入图片路径，rel添加lightbox[roadtrip]<br>
+	roadtrip为图组，如果不需要把中括号去掉
+</div>
+<style>
+.settingBox.weui_panel:first-child{margin-top:10px;}
+.settingBox .weui_media_title{ border-bottom:1px #d9d9d9 solid;}
+.settingBox .weui_media_box p{font-size:.75rem;}
+.settingBox .weui_media_box p i{ display: inline-block; vertical-align: top; line-height: 1.2; font-size:.875rem; font-weight: bold;}
+.settingBox .weui_media_desc{ padding-left:16px;}
+.settingBox .weui_cell:before{ border: none;}
+</style>
+<div class="weui_panel settingBox">
+	<div class="weui_panel_bd">
+      <div class="weui_media_box weui_media_text">
+        <h4 class="weui_media_title"><i><img src="../images/icon/icon_nav_panel.png" style="width:18px; height:18px; margin-top:2px;"></i>&nbsp;&nbsp;栏目标题</h4>
+        <p><i class="ui-icon-arrow"></i>本次活动的主要标题</p>
+        <p class="weui_media_desc">2小时前 请于2016年5月31日前来访</p>
+      </div>
+    </div>
+</div>
+
+</div>
+
+<style>
+.quanIteam{ display: block; border:#ddd 1px solid; border-radius: 4px; -webkit-border-radius: 4px; background: #fff url(../images/temp/quan.png) left top no-repeat; background-size:100px; position: relative; margin-bottom:10px; line-height: initial;}
+.quanIteam .getPro{ width:60px; height: 60px; background:url(../images/temp/get.png) no-repeat; background-size: 100%; position: absolute; left: 0; bottom: 0;}
+.quanIteam .lineTop{height: 3px; width:100%; background:url(../images/temp/btm.png) left bottom repeat-x; background-size: 8px; border-top:6px #74D2D4 solid;}
+.quanIteam .quanLeft{ float: left; margin-left:10px; margin-top:20px; color:#666;}
+.quanIteam .quanLeft span{display: inline-block; vertical-align:top;}
+.quanIteam .quanLeft span.txt{ margin-top:.75rem;}
+.quanIteam .quanLeft span.num{ font-size:2rem; font-weight: bold; }
+.quanIteam .quanRight{ float: right; width:50%; margin:10px 10px 0 0; color:#666;}
+.quanIteam .quanRight img{ max-width: 100%;}
+.quanIteam .quanRight span{ display: block; text-align: center; }
+.quanIteam .lineBtm{ background:url(../images/temp/dot.jpg) repeat-x; background-size:8px; margin-top:10px; padding:12px 10px 10px 10px; text-align: right; color:#666; font-size:.75rem;}
+.quanIteamUn .lineTop{ background-image: url(../images/temp/btm_un.png); border-top-color: #d7d6d6;}
+
+</style>
+
+<div class="content-padded">
+	<a href="###" class="quanIteam">
+		<div class="lineTop"></div>
+		<div class="quanLeft"><span class="num">一等奖</span></div>
+		<div class="quanRight">
+			<span>洗衣机</span>
+			<span><img src="../images/temp/line.jpg"></span>
+			<span>金龙家电（赞助商）</span></div>
+		<div class="clear"></div>
+		<div class="lineBtm">
+			2016.6.18
+		</div>
+	</a>
+	<div class="quanIteam quanIteamUn">
+		<div class="getPro"></div>
+		<div class="lineTop"></div>
+		<div class="quanLeft"><span class="num">一等奖</span></div>
+		<div class="quanRight">
+			<span>洗衣机</span>
+			<span><img src="../images/temp/line.jpg"></span>
+			<span>金龙家电（赞助商）</span></div>
+		<div class="clear"></div>
+		<div class="lineBtm">
+			2016.6.18
+		</div>
+	</div>
+
+</div>
+
+

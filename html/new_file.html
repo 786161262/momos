@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+<!--<a href="http://www.baidu.com" id="aaa" target="_blank">aaa</a>-->
+
+<a href="http://www.baidu.com"  target="_blank"><span id="spanId">aaa</span></a>
+
+<script src="../script/lib/jquery-2.1.4.js"></script>
+<script>
+$("#spanId").click();
+//window.open("http://www.baidu.com","newfile");
+
+ if (document.all) {
+    // For IE
+    document.getElementById('aaa').click();
+} else if (document.createEvent) {
+    //FOR DOM2
+    var ev = document.createEvent('MouseEvents');
+    ev.initEvent('click', false, true);
+    document.getElementById('aaa').dispatchEvent(ev);
+}	
+</script>
+
+
+	</body>
+</html>
